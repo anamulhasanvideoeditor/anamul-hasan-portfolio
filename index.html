@@ -1,174 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Anamul Hasan — Video Editor & Motion Designer. Cinematic edits, motion graphics and visual storytelling.">
-<meta name="theme-color" content="#090a0f">
-<title>Anamul Hasan — Video Editor & Motion Designer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="Anamul Hasan — Video Editor & Motion Designer. Creative video editing, motion graphics, brand promotions and cinematic storytelling.">
+<title>Anamul Hasan | Video Editor & Motion Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#090a0f;--panel:#11131c;--panel2:#171a25;--text:#f5f6fb;--muted:#a1a5b5;--line:rgba(255,255,255,.1);--accent:#ff6b35;--accent2:#ff9a62;--max:1160px;color-scheme:dark}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,color-mix(in srgb,var(--accent) 15%,transparent),transparent 32%),var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6;transition:background .25s,color .25s}a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
-.nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:20px}.brand{font:700 20px "Space Grotesk";letter-spacing:-.7px}.brand span{color:var(--accent)}.navlinks{display:flex;gap:30px;color:var(--muted);font-size:13px}.navlinks a:hover,.textlink:hover{color:var(--accent)}.nav-actions{display:flex;align-items:center;gap:10px}.nav-cta{border:1px solid color-mix(in srgb,var(--accent) 65%,transparent);padding:10px 16px;border-radius:999px;font-size:12px}.icon-btn{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:var(--panel);color:var(--text);cursor:pointer;font-size:17px}.icon-btn:hover{border-color:var(--accent);color:var(--accent)}
-.hero{min-height:650px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:48px;padding:75px 0 90px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--accent);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700}.dot{width:7px;height:7px;border-radius:50%;background:#73e4a5;box-shadow:0 0 14px #73e4a5}.hero h1{font:700 clamp(48px,7vw,88px)/.98 "Space Grotesk";letter-spacing:-5px;margin:24px 0}.hero h1 em{font-style:normal;background:linear-gradient(100deg,var(--accent),var(--accent2));background-clip:text;color:transparent}.hero p{max-width:540px;color:var(--muted);font-size:16px;line-height:1.85}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 21px;border-radius:7px;font-weight:700;font-size:13px;transition:.2s;cursor:pointer}.btn.primary{background:linear-gradient(110deg,var(--accent),var(--accent2));color:#151515;box-shadow:0 10px 35px color-mix(in srgb,var(--accent) 22%,transparent);border:0}.btn.secondary{border:1px solid var(--line);color:var(--text);background:transparent}.btn:hover{transform:translateY(-3px)}.hero-note{margin-top:38px;color:var(--muted);font-size:11px;letter-spacing:1px;text-transform:uppercase}
-.showreel{position:relative;min-height:430px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 25%,#28213e),#10131e 55%,#1a3945);box-shadow:0 30px 90px #0009}.showreel:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 20%,rgba(0,0,0,.15)),radial-gradient(circle at 70% 28%,color-mix(in srgb,var(--accent) 38%,transparent),transparent 25%),radial-gradient(circle at 25% 75%,#49d8e555,transparent 28%)}.reel-grid{position:absolute;inset:28px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:10px;transform:rotate(-5deg) scale(1.08)}.reel-tile{border:1px solid #ffffff26;border-radius:9px;background:linear-gradient(140deg,#41315f,#171a2a);overflow:hidden;position:relative}.reel-tile:nth-child(2){background:linear-gradient(140deg,#27505c,#141b2a)}.reel-tile:nth-child(3){background:linear-gradient(140deg,#77513f,#211d2c)}.reel-tile:nth-child(4){background:linear-gradient(140deg,#3d4669,#171a29)}.reel-tile:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#05060bcc,transparent 65%)}.tile-label{position:absolute;z-index:1;bottom:12px;left:13px;font:600 10px "Space Grotesk";letter-spacing:1px;text-transform:uppercase}.play{position:absolute;z-index:3;left:50%;top:50%;transform:translate(-50%,-50%);width:68px;height:68px;border-radius:50%;background:#ffffffdf;color:#151522;display:grid;place-items:center;font-size:21px;padding-left:4px;box-shadow:0 0 0 12px #ffffff1c}.reel-caption{position:absolute;z-index:4;bottom:24px;right:25px;font-size:10px;letter-spacing:2px;color:#e9e7f6}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:25px 0;margin-bottom:75px}.stat{padding:0 24px;border-right:1px solid var(--line)}.stat:first-child{padding-left:0}.stat:last-child{border:0}.stat strong{display:block;font:700 26px "Space Grotesk"}.stat span{color:var(--muted);font-size:11px;letter-spacing:1px;text-transform:uppercase}
-section{padding:45px 0 95px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:30px}.kicker{font-size:11px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;font-weight:700}.section-head h2{font:700 clamp(34px,5vw,52px)/1.05 "Space Grotesk";letter-spacing:-2px;margin:10px 0 0}.section-head p{max-width:390px;color:var(--muted);font-size:13px;margin:0}
-.filters{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 25px}.filter-btn{border:1px solid var(--line);background:var(--panel);color:var(--muted);padding:9px 15px;border-radius:99px;font-size:12px;cursor:pointer}.filter-btn.active,.filter-btn:hover{background:var(--accent);border-color:var(--accent);color:#151515;font-weight:700}
-.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.project{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel);transition:.25s}.project:hover{transform:translateY(-5px);border-color:var(--accent)}.thumb{height:260px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 35%,#3a2859),#171a2a)}.thumb:before{content:"";position:absolute;width:65%;height:130%;border:1px solid #ffffff26;transform:rotate(28deg);box-shadow:0 0 80px color-mix(in srgb,var(--accent) 35%,transparent)}.thumb.t2{background:linear-gradient(135deg,#23505a,#151a2b)}.thumb.t3{background:linear-gradient(135deg,#79513d,#1c1b2b)}.thumb.t4{background:linear-gradient(135deg,#3e4770,#171a2b)}.thumb-text{z-index:1;text-align:center;font:700 clamp(24px,4vw,42px)/1 "Space Grotesk";letter-spacing:-2px;text-shadow:0 4px 20px #0008}.thumb small{display:block;font:600 9px "DM Sans";letter-spacing:3px;margin-top:12px;color:#d9d8e9}.project-body{padding:20px 22px 23px}.project-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.project h3{font:600 19px "Space Grotesk";margin:0}.tag{font-size:9px;color:var(--accent);letter-spacing:1px;text-transform:uppercase;border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);padding:5px 8px;border-radius:99px}.project p{font-size:12px;color:var(--muted);margin:9px 0 15px}.watch-btn{border:0;background:none;color:var(--accent);font-size:12px;font-weight:700;padding:0;cursor:pointer}.watch-btn:hover{text-decoration:underline}
-.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}.about-card{border:1px solid var(--line);background:linear-gradient(145deg,var(--panel2),var(--panel));padding:28px;border-radius:12px}.about-monogram{font:700 90px/.9 "Space Grotesk";letter-spacing:-9px;background:linear-gradient(130deg,var(--accent),var(--accent2));background-clip:text;color:transparent}.about-card p{color:var(--muted);font-size:13px}.about-copy h2{font:700 43px/1.1 "Space Grotesk";letter-spacing:-2px;margin:0 0 20px}.about-copy p{color:var(--muted);font-size:14px;line-height:1.9}.skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:25px}.skill{padding:9px 13px;border-radius:6px;border:1px solid var(--line);background:#ffffff06;font-size:11px;color:var(--text)}
-.services{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.service{padding:22px 18px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}.service .num{color:var(--accent);font:600 12px "Space Grotesk"}.service h3{font:600 17px "Space Grotesk";margin:27px 0 8px}.service p{font-size:11px;color:var(--muted);margin:0}
-.contact{padding:65px 55px;border-radius:15px;border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);background:radial-gradient(ellipse at 90% 10%,color-mix(in srgb,var(--accent) 22%,transparent),transparent 45%),linear-gradient(120deg,var(--panel2),var(--panel))}.contact h2{font:700 clamp(38px,6vw,64px)/1 "Space Grotesk";letter-spacing:-3px;margin:14px 0}.contact p{color:var(--muted);max-width:550px;font-size:14px}.contact-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.contact-links a{border:1px solid var(--line);border-radius:7px;padding:12px 16px;font-size:12px}.footer{padding:30px 0 42px;color:var(--muted);font-size:11px;display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);margin-top:80px}
-/* Theme customizer */
-.theme-panel{position:fixed;z-index:30;right:22px;top:92px;width:min(340px,calc(100vw - 30px));padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--panel);box-shadow:0 20px 70px #0009;display:none}.theme-panel.open{display:block}.panel-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}.panel-head h3{font:600 17px "Space Grotesk";margin:0}.close-panel{background:none;border:0;color:var(--muted);font-size:22px;cursor:pointer}.theme-label{display:block;color:var(--muted);font-size:11px;letter-spacing:1px;text-transform:uppercase;margin:15px 0 9px}.swatches{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.swatch{border:1px solid var(--line);border-radius:8px;padding:8px;background:var(--panel2);color:var(--text);font-size:10px;text-align:left;cursor:pointer}.swatch-dot{display:block;height:25px;border-radius:5px;margin-bottom:6px}.swatch.selected{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}.custom-row{display:flex;gap:10px;align-items:center}.custom-row input[type=color]{width:48px;height:40px;border:1px solid var(--line);border-radius:7px;background:var(--panel2);padding:3px;cursor:pointer}.custom-row input[type=text]{min-width:0;flex:1;background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:7px;padding:10px;font-size:12px;text-transform:uppercase}.panel-actions{display:flex;gap:8px;margin-top:15px}.panel-actions button{flex:1;padding:10px;border-radius:7px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font-size:11px;cursor:pointer}.panel-actions .save-theme{background:var(--accent);color:#151515;border-color:var(--accent);font-weight:700}.panel-note{color:var(--muted);font-size:10px;margin:12px 0 0}
-/* Video modal */
-.modal{position:fixed;inset:0;z-index:50;background:#000d;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-box{width:min(850px,100%);background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}.modal-head{display:flex;justify-content:space-between;align-items:center;padding:13px 17px}.modal-head h3{margin:0;font:600 16px "Space Grotesk"}.modal-close{border:0;background:none;color:var(--text);font-size:25px;cursor:pointer}.video-frame{aspect-ratio:16/9;background:#050505;display:grid;place-items:center;color:var(--muted);text-align:center;padding:25px}.video-frame iframe{width:100%;height:100%;border:0}.video-placeholder strong{display:block;color:var(--text);margin-bottom:8px}.video-placeholder p{font-size:12px;max-width:480px}
-body.light{--bg:#f4f5f8;--panel:#fff;--panel2:#eceef3;--text:#171923;--muted:#626879;--line:rgba(20,24,35,.13);color-scheme:light;background:radial-gradient(ellipse at 80% 0%,color-mix(in srgb,var(--accent) 12%,transparent),transparent 32%),var(--bg)}body.light .navlinks{color:var(--muted)}body.light .btn.secondary{color:var(--text)}body.light .skill{color:var(--text)}body.light .theme-panel,body.light .modal-box{background:var(--panel)}
-@media(max-width:800px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding:65px 0;gap:35px}.showreel{min-height:340px}.about{grid-template-columns:1fr;gap:30px}.services{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.section-head p{margin-top:15px}.stats{margin-bottom:55px}}
-@media(max-width:540px){.wrap{width:min(100% - 30px,var(--max))}.nav{height:70px}.hero h1{letter-spacing:-3px}.showreel{min-height:285px}.reel-grid{inset:18px}.stats{grid-template-columns:1fr;gap:17px;padding:22px 0}.stat,.stat:first-child{padding:0;border:0}.stat strong{font-size:22px}.projects{grid-template-columns:1fr}.thumb{height:220px}.services{grid-template-columns:1fr 1fr}.contact{padding:35px 23px}.footer{display:block}.footer span{display:block;margin-top:8px}.theme-panel{right:15px;top:80px}}
-</style>
-</head>
+:root{--bg:#090909;--panel:#111;--panel2:#171717;--text:#f5f3ef;--muted:#a6a19a;--accent:#ff8a24;--line:#292521;--glow:rgba(255,138,36,.25);--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.6;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 80% 12%,rgba(255,126,30,.08),transparent 34%),radial-gradient(ellipse at 5% 70%,rgba(255,126,30,.04),transparent 30%)}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(9,9,9,.84);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-family:'Space Grotesk';font-weight:700}.brandmark{width:42px;height:42px;border:1px solid var(--accent);color:var(--accent);display:grid;place-items:center;border-radius:12px;font-size:19px;box-shadow:0 0 20px var(--glow)}.brand small{display:block;color:var(--muted);font:500 10px 'DM Sans';letter-spacing:.08em}.links{display:flex;gap:27px;align-items:center;font-size:13px;color:#d6d1ca}.links a:hover{color:var(--accent)}.avail{border:1px solid #3b8b66;border-radius:30px;padding:8px 13px;color:#a9e4c4;font-size:11px;white-space:nowrap}.avail i{display:inline-block;width:7px;height:7px;background:#43d58a;border-radius:50%;margin-right:7px;box-shadow:0 0 10px #43d58a}.menu{display:none;background:none;color:white;border:0;font-size:24px}
+.hero{padding:76px 0 36px;min-height:570px;display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:40px;position:relative}.eyebrow{color:var(--accent);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;display:flex;align-items:center;gap:12px}.eyebrow:after{content:"";height:1px;width:62px;background:var(--accent);opacity:.7}.hero h1{font:700 clamp(42px,6vw,72px)/1.05 'Space Grotesk';letter-spacing:-.055em;margin:19px 0}.hero h1 span,.accent{color:var(--accent)}.lead{font-size:17px;color:#c9c3bb;max-width:570px}.tools{display:flex;gap:10px;flex-wrap:wrap;margin:27px 0}.tool{display:flex;align-items:center;gap:8px;background:#151515;border:1px solid #2c2925;border-radius:10px;padding:8px 11px;font-size:11px;color:#ddd}.tool b{font:700 13px 'Space Grotesk';color:var(--accent);background:#24180f;padding:5px 6px;border-radius:5px}.actions{display:flex;gap:13px;align-items:center;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 19px;border-radius:30px;background:var(--accent);color:#130d07;font-weight:700;font-size:13px;border:1px solid var(--accent);box-shadow:0 0 24px var(--glow);transition:.25s}.btn:hover{transform:translateY(-3px) scale(1.025);box-shadow:0 0 34px rgba(255,138,36,.45)}.btn.ghost{background:transparent;color:var(--text);box-shadow:none;border-color:#514236}.btn.ghost:hover{border-color:var(--accent);color:var(--accent)}.portrait-wrap{position:relative;min-height:430px;display:flex;align-items:end;justify-content:center}.portrait-wrap:before{content:"";position:absolute;width:min(390px,90%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(255,139,42,.24),rgba(255,139,42,.04) 55%,transparent 70%);filter:blur(7px)}.portrait{position:relative;width:min(390px,90%);height:440px;object-fit:cover;object-position:center 22%;border-radius:190px 190px 24px 24px;filter:contrast(1.04);mask-image:linear-gradient(to bottom,#000 0%,#000 82%,transparent 100%);box-shadow:0 0 55px rgba(255,130,35,.11)}.portrait-label{position:absolute;right:0;bottom:52px;background:rgba(15,15,15,.82);border:1px solid #403126;padding:12px 16px;border-radius:12px;font:italic 17px 'Space Grotesk';color:var(--accent);backdrop-filter:blur(8px)}.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #453326;border-radius:18px;background:linear-gradient(110deg,#14110e,#111);box-shadow:0 0 25px rgba(255,139,36,.09);margin:15px auto 80px;overflow:hidden}.stat{padding:23px 18px;text-align:center;border-right:1px solid #332b24}.stat:last-child{border:0}.stat strong{display:block;font:700 30px 'Space Grotesk';color:var(--accent)}.stat span{font-size:12px;color:var(--muted)}
+section{padding:70px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.kicker{font-size:11px;color:var(--accent);letter-spacing:.17em;text-transform:uppercase;font-weight:700}.section-head h2{font:700 clamp(30px,4vw,43px)/1.15 'Space Grotesk';margin:7px 0 0;letter-spacing:-.04em}.section-head p{color:var(--muted);font-size:13px;max-width:360px;margin:0}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:23px}.filter{border:1px solid #34302b;background:#111;color:#c9c3bb;border-radius:30px;padding:8px 13px;font-size:11px;cursor:pointer;transition:.2s}.filter.active,.filter:hover{background:var(--accent);border-color:var(--accent);color:#160e06}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.project{background:var(--panel);border:1px solid #292621;border-radius:15px;overflow:hidden;transition:.3s;cursor:pointer}.project:hover{transform:translateY(-5px);border-color:#865021;box-shadow:0 14px 35px rgba(0,0,0,.35)}.thumb{aspect-ratio:16/9;background:#1b1b1b;position:relative;overflow:hidden}.thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s;filter:saturate(.88)}.project:hover .thumb img{transform:scale(1.06)}.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:48px;height:48px;border-radius:50%;background:rgba(255,138,36,.94);color:#130c05;display:grid;place-items:center;font-size:18px;box-shadow:0 0 25px rgba(255,138,36,.45)}.tag{position:absolute;left:12px;top:12px;background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.12);padding:5px 9px;border-radius:20px;font-size:9px;color:#f2d5b6}.pinfo{padding:14px 15px 16px}.pinfo h3{font:600 15px 'Space Grotesk';margin:0 0 5px}.pinfo p{margin:0;color:var(--muted);font-size:11px}.project[hidden]{display:none}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}.about-copy p{color:#bcb6ae;font-size:14px}.about-copy p strong{color:#fff}.mini-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:25px}.mini{background:#121212;border:1px solid #292621;border-radius:12px;padding:16px}.mini strong{display:block;color:var(--accent);font:700 23px 'Space Grotesk'}.mini span{color:var(--muted);font-size:11px}.skills-box{background:linear-gradient(145deg,#171411,#101010);border:1px solid #34291f;border-radius:18px;padding:25px}.skills-box h3{font:600 22px 'Space Grotesk';margin:0 0 18px}.skill-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.skill{display:flex;align-items:center;gap:10px;padding:12px;background:#1c1a18;border-radius:10px;font-size:12px}.skill i{font-style:normal;color:var(--accent);font-size:18px}
+.tools-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.software{background:#121212;border:1px solid #292621;border-radius:13px;padding:20px;display:flex;align-items:center;gap:13px}.software b{width:42px;height:42px;display:grid;place-items:center;border-radius:10px;background:#21180f;color:var(--accent);font:700 17px 'Space Grotesk'}.software span{font-size:13px;font-weight:600}.services{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.service{background:#121212;border:1px solid #292621;border-radius:15px;padding:22px;min-height:175px;transition:.25s}.service:hover{border-color:#80502c;transform:translateY(-4px)}.service .ico{font-size:23px;color:var(--accent)}.service h3{font:600 16px 'Space Grotesk';margin:14px 0 7px}.service p{font-size:11px;color:var(--muted);margin:0}
+.contact{padding:85px 0 55px;text-align:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 100%,rgba(255,135,32,.16),transparent 62%),linear-gradient(180deg,transparent,#100d0a)}.contact:before,.contact:after{content:"";position:absolute;width:350px;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);top:28px;left:50%;transform:translateX(-50%);box-shadow:0 0 20px var(--accent)}.contact:after{top:auto;bottom:20px;width:220px}.contact h2{font:700 clamp(32px,5vw,53px)/1.1 'Space Grotesk';letter-spacing:-.04em;margin:15px auto}.contact p{color:#c1bbb3;max-width:670px;margin:0 auto 25px;font-size:14px}.contact .btn{padding:14px 24px}.contact-meta{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-top:35px;color:#a9a29a;font-size:12px}.contact-meta a:hover{color:var(--accent)}footer{padding:22px 0;border-top:1px solid #26221e;color:#77716a;font-size:11px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.social{display:flex;gap:15px}.social a:hover{color:var(--accent)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}.cursor{position:fixed;width:17px;height:17px;border:1px solid var(--accent);border-radius:50%;pointer-events:none;z-index:99;transform:translate(-50%,-50%);box-shadow:0 0 13px var(--glow);transition:width .15s,height .15s;display:none}.cursor-dot{position:fixed;width:4px;height:4px;border-radius:50%;background:var(--accent);pointer-events:none;z-index:100;transform:translate(-50%,-50%);display:none}.modal{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:60;display:none;align-items:center;justify-content:center;padding:22px}.modal.open{display:flex}.modal-inner{width:min(900px,100%);background:#111;border:1px solid #4a3320;border-radius:15px;overflow:hidden;position:relative}.modal iframe{width:100%;aspect-ratio:16/9;display:block;border:0}.close{position:absolute;right:10px;top:10px;z-index:2;border:0;border-radius:50%;width:38px;height:38px;background:var(--accent);color:#111;font-size:22px;cursor:pointer}.customize{position:fixed;right:18px;bottom:18px;z-index:30;border:1px solid #4a3524;background:#17120e;color:var(--accent);border-radius:50%;width:45px;height:45px;font-size:18px;cursor:pointer;box-shadow:0 0 18px var(--glow)}.palette{position:fixed;right:18px;bottom:72px;z-index:30;background:#171717;border:1px solid #40362d;border-radius:13px;padding:14px;display:none;width:190px}.palette.open{display:block}.palette label{font-size:11px;color:#ccc;display:block;margin-bottom:9px}.swatches{display:flex;gap:8px}.swatch{width:24px;height:24px;border:2px solid #ddd;border-radius:50%;cursor:pointer}.light{--bg:#f3f0eb;--panel:#fff;--panel2:#eee;--text:#171411;--muted:#68615a;--line:#ddd4ca}.light .topbar{background:rgba(243,240,235,.9)}.light .links{color:#38332e}.light .tool,.light .filter,.light .software,.light .service,.light .skills-box,.light .skill,.light .mini,.light .project{background:#fff;color:#25201c;border-color:#ded6cc}.light .lead,.light .about-copy p{color:#554e47}.light .stat{background:#fff}.light .stat span{color:#68615a}
+@media(min-width:900px){.cursor,.cursor-dot{display:block}body{cursor:none}a,button,.project{cursor:none}}
+@media(max-width:850px){.links{gap:14px}.hero{grid-template-columns:1fr  .8fr;gap:10px}.portrait{height:360px}.portrait-wrap{min-height:370px}.projects{grid-template-columns:repeat(2,1fr)}.services{grid-template-columns:repeat(2,1fr)}.tools-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.wrap{width:min(100% - 30px,var(--max))}.nav{height:66px}.menu{display:block}.links{display:none;position:absolute;top:66px;left:0;right:0;padding:18px 22px;background:#101010;border-bottom:1px solid #302820;flex-direction:column;align-items:flex-start}.links.open{display:flex}.avail{font-size:10px}.hero{padding-top:48px;grid-template-columns:1fr;text-align:left;gap:5px}.hero h1{font-size:47px}.lead{font-size:15px}.portrait-wrap{min-height:300px;grid-row:1}.portrait{height:320px;width:260px}.portrait-label{right:5%;bottom:35px}.stats{grid-template-columns:repeat(2,1fr);margin-bottom:35px}.stat{padding:16px 8px;border-bottom:1px solid #332b24}.stat:nth-child(2){border-right:0}.stat:nth-child(3),.stat:nth-child(4){border-bottom:0}.stat strong{font-size:24px}.stat span{font-size:10px}.section-head{display:block}.section-head p{margin-top:12px}.projects{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr;gap:25px}.services{grid-template-columns:1fr 1fr}.skill-list{grid-template-columns:1fr 1fr}.tools-grid{grid-template-columns:1fr 1fr}.software{padding:13px 10px}.software span{font-size:11px}section{padding:52px 0}.contact{padding:65px 0 48px}.foot{justify-content:center;text-align:center}.contact-meta{gap:12px}.cursor,.cursor-dot{display:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style></head>
 <body>
-<header class="wrap nav">
-  <a class="brand" href="#home">ANAMUL<span>.</span></a>
-  <nav class="navlinks" aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
-  <div class="nav-actions">
-    <button class="icon-btn" id="themeToggle" aria-label="Open theme settings" title="Customize colors">⚙</button>
-    <a class="nav-cta" href="#contact">LET'S TALK ↗</a>
-  </div>
-</header>
-
-<aside class="theme-panel" id="themePanel" aria-label="Theme customization">
-  <div class="panel-head"><h3>Customize appearance</h3><button class="close-panel" id="closeTheme" aria-label="Close">×</button></div>
-  <span class="theme-label">Preset accent colors</span>
-  <div class="swatches" id="swatches">
-    <button class="swatch selected" data-color="#ff6b35"><span class="swatch-dot" style="background:#ff6b35"></span>Orange</button>
-    <button class="swatch" data-color="#3b82f6"><span class="swatch-dot" style="background:#3b82f6"></span>Blue</button>
-    <button class="swatch" data-color="#a3e635"><span class="swatch-dot" style="background:#a3e635"></span>Neon</button>
-    <button class="swatch" data-color="#a855f7"><span class="swatch-dot" style="background:#a855f7"></span>Purple</button>
-    <button class="swatch" data-color="#ef4444"><span class="swatch-dot" style="background:#ef4444"></span>Red</button>
-    <button class="swatch" data-color="#e5e7eb"><span class="swatch-dot" style="background:#e5e7eb"></span>White</button>
-  </div>
-  <label class="theme-label" for="colorPicker">Custom color</label>
-  <div class="custom-row"><input type="color" id="colorPicker" value="#ff6b35" aria-label="Choose custom accent color"><input type="text" id="hexInput" value="#FF6B35" maxlength="7" aria-label="HEX color code"></div>
-  <div class="panel-actions"><button class="save-theme" id="saveTheme">Save theme</button><button id="resetTheme">Reset default</button></div>
-  <p class="panel-note">Your saved theme is remembered in this browser using local storage.</p>
-  <div class="panel-actions"><button id="lightMode">Toggle light / dark mode</button></div>
-</aside>
-
-<main>
-  <div class="wrap hero" id="home">
-    <div>
-      <div class="eyebrow"><span class="dot"></span> Available for select projects</div>
-      <h1>Ideas into<br><em>impactful</em><br>visuals.</h1>
-      <p>I'm <strong>Anamul Hasan</strong>, a Video Editor &amp; Motion Designer crafting engaging videos, thoughtful motion graphics and visual stories that make people stop and watch.</p>
-      <div class="actions"><a class="btn primary" href="#work">Explore my work <span>↗</span></a><a class="btn secondary" href="#contact">Get in touch</a></div>
-      <div class="hero-note">VIDEO EDITING · MOTION DESIGN · VISUAL STORYTELLING</div>
-    </div>
-    <div class="showreel" aria-label="Showreel preview placeholder"><div class="reel-grid"><div class="reel-tile"><span class="tile-label">Short-form reels</span></div><div class="reel-tile"><span class="tile-label">Motion design</span></div><div class="reel-tile"><span class="tile-label">Commercial ads</span></div><div class="reel-tile"><span class="tile-label">Travel films</span></div></div><div class="play">▶</div><div class="reel-caption">SHOWREEL / 2026</div></div>
-  </div>
-
-  <div class="wrap stats"><div class="stat"><strong>3+ Years</strong><span>Editing experience</span></div><div class="stat"><strong>4 Tools</strong><span>Creative workflow</span></div><div class="stat"><strong>End-to-end</strong><span>From footage to final cut</span></div></div>
-
-  <section class="wrap" id="work">
-    <div class="section-head"><div><div class="kicker">Selected projects</div><h2>Work that speaks.</h2></div><p>Explore my work by category. These are sample project cards—replace them with your real projects and video links.</p></div>
-    <div class="filters" role="group" aria-label="Filter portfolio projects">
-      <button class="filter-btn active" data-filter="all">All Work</button>
-      <button class="filter-btn" data-filter="reels">Short Reels</button>
-      <button class="filter-btn" data-filter="ads">Promotional Ads</button>
-      <button class="filter-btn" data-filter="talking">Talking Head &amp; Long-form</button>
-      <button class="filter-btn" data-filter="travel">Travel &amp; Cinematic</button>
-    </div>
-    <div class="projects" id="projectGrid">
-      <article class="project" data-category="reels"><div class="thumb"><div class="thumb-text">SHORT<br>REELS<small>VERTICAL · SOCIAL</small></div></div><div class="project-body"><div class="project-top"><h3>Social Media Reels</h3><span class="tag">Short Reels</span></div><p>Fast-paced vertical edits, captions, sound design and engaging hooks.</p><button class="watch-btn" data-title="Social Media Reels" data-video="">▶ View project details</button></div></article>
-      <article class="project" data-category="ads"><div class="thumb t2"><div class="thumb-text">BRAND<br>STORY<small>PROMO · COMMERCIAL</small></div></div><div class="project-body"><div class="project-top"><h3>Brand Promotional Film</h3><span class="tag">Promotional Ads</span></div><p>Product-focused storytelling designed to bring a brand's personality forward.</p><button class="watch-btn" data-title="Brand Promotional Film" data-video="">▶ View project details</button></div></article>
-      <article class="project" data-category="talking"><div class="thumb t3"><div class="thumb-text">TALKING<br>HEAD<small>YOUTUBE · STORY FLOW</small></div></div><div class="project-body"><div class="project-top"><h3>Talking-Head Editing</h3><span class="tag">Long-form</span></div><p>Clean pacing, engaging cuts, subtitles, sound design and polished delivery.</p><button class="watch-btn" data-title="Talking-Head Editing" data-video="">▶ View project details</button></div></article>
-      <article class="project" data-category="travel"><div class="thumb t4"><div class="thumb-text">TRAVEL<br>DIARIES<small>FILM · COLOUR · SOUND</small></div></div><div class="project-body"><div class="project-top"><h3>Travel &amp; Documentary</h3><span class="tag">Travel</span></div><p>Cinematic sequences, music-led storytelling and immersive visual rhythm.</p><button class="watch-btn" data-title="Travel & Documentary" data-video="">▶ View project details</button></div></article>
-    </div>
-  </section>
-
-  <section class="wrap" id="about"><div class="about"><div class="about-card"><div class="about-monogram">AH.</div><p>VIDEO EDITOR<br>MOTION DESIGNER<br>VISUAL STORYTELLER</p></div><div class="about-copy"><div class="kicker">A little about me</div><h2>Good stories deserve great editing.</h2><p>I’m Anamul Hasan, a video editor and motion designer with 3+ years of experience. I enjoy turning raw footage into clear, engaging stories—whether that's a YouTube video, a brand promotion, a travel film or short-form social content.</p><p>My focus is on strong storytelling, thoughtful pacing, clean visuals and sound that supports the message. I work to understand each project's goal and shape the edit around its audience.</p><div class="skills"><span class="skill">Adobe Premiere Pro</span><span class="skill">Adobe After Effects</span><span class="skill">Adobe Photoshop</span><span class="skill">CapCut</span><span class="skill">Motion Graphics</span><span class="skill">Basic VFX</span></div></div></div></section>
-
-  <section class="wrap" id="services"><div class="section-head"><div><div class="kicker">What I can do</div><h2>Services &amp; skills.</h2></div><p>Flexible creative support for creators, brands and businesses looking to communicate through video.</p></div><div class="services"><article class="service"><div class="num">01 / EDIT</div><h3>Video Editing</h3><p>YouTube videos, reels, shorts and long-form content.</p></article><article class="service"><div class="num">02 / MOTION</div><h3>Motion Graphics</h3><p>Animated titles, explainers and dynamic visual elements.</p></article><article class="service"><div class="num">03 / VFX</div><h3>Visual Effects</h3><p>Creative enhancements and polished visual details.</p></article><article class="service"><div class="num">04 / BRAND</div><h3>Promo Content</h3><p>Promotional edits for products, services and brands.</p></article></div></section>
-
-  <section class="wrap" id="contact"><div class="contact"><div class="kicker">Have a project in mind?</div><h2>Let's make it<br>memorable.</h2><p>Tell me what you're creating. I'd love to hear about your project and explore how I can help bring it to life.</p><div class="contact-links"><a href="mailto:anamulhasan12@gmail.com">Email me ↗</a><a href="https://wa.me/8801581493802" target="_blank" rel="noopener">WhatsApp ↗</a><a href="https://www.linkedin.com/in/anamulhasan228" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://www.facebook.com/profile.php?id=61588774130566" target="_blank" rel="noopener">Facebook ↗</a></div></div></section>
+<div class="cursor" id="cursor"></div><div class="cursor-dot" id="cursorDot"></div>
+<header class="topbar"><div class="wrap nav">
+<a class="brand" href="#home"><span class="brandmark">AH</span><span>Anamul Hasan<small>VIDEO EDITOR & MOTION DESIGNER</small></span></a>
+<nav class="links" id="navLinks"><a href="#home">Home</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+<span class="avail"><i></i>Available for Projects</span><button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+</div></header>
+<main id="home">
+<div class="wrap hero">
+<div class="hero-copy reveal"><div class="eyebrow">Video Editor & Motion Designer</div><h1>Hi, I'm <span>Anamul Hasan</span></h1><p class="lead">Turning ideas into engaging visual stories through creative video editing, motion graphics, and visual effects.</p>
+<div class="tools"><div class="tool"><b>Pr</b> Premiere Pro</div><div class="tool"><b>Ae</b> After Effects</div><div class="tool"><b>Ps</b> Photoshop</div><div class="tool"><b>✂</b> CapCut</div></div>
+<div class="actions"><a class="btn" href="#portfolio">▶ &nbsp;Explore My Work</a><a class="btn ghost" href="#contact">Let's Connect ↗</a></div></div>
+<div class="portrait-wrap reveal"><img class="portrait" src="assets/anamul-hasan.png" alt="Portrait of Anamul Hasan"><div class="portrait-label">Video Editor<br>& Motion Designer</div></div>
+</div>
+<div class="wrap stats reveal">
+<div class="stat"><strong data-count="110" data-suffix="K">110K</strong><span>Brand Facebook Followers</span></div><div class="stat"><strong data-count="30" data-suffix="K+">30K+</strong><span>Education Channel Subscribers</span></div><div class="stat"><strong data-count="12" data-suffix="K">12K</strong><span>Travel Channel YouTube Subscribers</span></div><div class="stat"><strong>3–4 Years</strong><span>Professional Experience</span></div>
+</div>
+<section id="portfolio"><div class="wrap">
+<div class="section-head reveal"><div><div class="kicker">Selected work</div><h2>Explore <span class="accent">My Work</span></h2></div><p>A collection of creative projects across different categories. Choose a category and explore the videos.</p></div>
+<div class="filters reveal" id="filters"><button class="filter active" data-filter="all">All Projects · 30</button><button class="filter" data-filter="talking">Talking Head · 6</button><button class="filter" data-filter="reels">Short Reels · 6</button><button class="filter" data-filter="ads">Promotional Ads · 11</button><button class="filter" data-filter="travel">Travel & Cinematic · 4</button><button class="filter" data-filter="before">Before & After · 3</button></div>
+<div class="projects" id="projects"></div>
+</div></section>
+<section id="about"><div class="wrap about-grid">
+<div class="about-copy reveal"><div class="kicker">A little about me</div><h2 style="font:700 38px 'Space Grotesk';margin:8px 0 15px">Who Am <span class="accent">I?</span></h2>
+<p>Hi, I'm <strong>Anamul Hasan</strong> — a passionate Video Editor and Motion Graphics Designer with 3–4 years of professional experience.</p>
+<p>I specialize in transforming ideas into engaging visual stories through creative video editing, motion graphics, and visual effects. From brand campaigns and talking-head videos to educational content and travel storytelling, I focus on creating visuals that not only look great but also deliver meaningful results.</p>
+<p>I believe every video has a story worth telling, and my goal is to bring that story to life through creativity, precision, and purpose.</p>
+<p>With 3–4 years of professional experience, I have collaborated with clothing brands, educational platforms, and content creators to produce engaging, results-driven video content.</p>
+<div class="mini-stats"><div class="mini"><strong>50K → 110K</strong><span>Clothing brand Facebook followers</span></div><div class="mini"><strong>600 → 30K+</strong><span>Educational channel subscribers</span></div><div class="mini"><strong>0 → 15K</strong><span>Travel channel followers</span></div><div class="mini"><strong>0 → 12K</strong><span>Travel channel YouTube subscribers</span></div></div>
+</div>
+<div class="skills-box reveal"><div class="kicker">What I do best</div><h3>My <span class="accent">Expertise</span></h3><div class="skill-list"><div class="skill"><i>✂</i>Video Editing</div><div class="skill"><i>▣</i>Motion Graphics</div><div class="skill"><i>◉</i>Color Grading</div><div class="skill"><i>⌘</i>Social Media Content</div></div><div style="height:1px;background:#342b23;margin:25px 0"></div><p style="color:var(--muted);font-size:12px;margin:0">My focus is simple: make every frame purposeful, every story engaging, and every edit work toward your goal.</p></div>
+</div></section>
+<section id="skills"><div class="wrap"><div class="section-head reveal"><div><div class="kicker">Tools of the trade</div><h2>Software I <span class="accent">Use</span></h2></div><p>Four tools that help me turn raw footage and ideas into polished content.</p></div><div class="tools-grid reveal"><div class="software"><b>Pr</b><span>Adobe Premiere Pro</span></div><div class="software"><b>Ae</b><span>Adobe After Effects</span></div><div class="software"><b>Ps</b><span>Adobe Photoshop</span></div><div class="software"><b>✂</b><span>CapCut</span></div></div></div></section>
+<section id="services"><div class="wrap"><div class="section-head reveal"><div><div class="kicker">How I can help</div><h2>What I <span class="accent">Offer</span></h2></div><p>Creative editing services designed to help your content connect with the right audience.</p></div><div class="services">
+<div class="service reveal"><div class="ico">▣</div><h3>Talking-Head Editing</h3><p>Podcasts, interviews, educational videos and long-form content.</p></div>
+<div class="service reveal"><div class="ico">▶</div><h3>Short-Form Videos</h3><p>Engaging Reels, YouTube Shorts and social media content.</p></div>
+<div class="service reveal"><div class="ico">✦</div><h3>Brand & Promotional Ads</h3><p>Creative promotional videos that communicate your brand message.</p></div>
+<div class="service reveal"><div class="ico">⌁</div><h3>Travel & Cinematic Videos</h3><p>Visual storytelling with cinematic pacing, color and atmosphere.</p></div>
+</div></div></section>
+<section class="contact" id="contact"><div class="wrap reveal"><div class="kicker">Have a project in mind?</div><h2>Let's Create Something <span class="accent">Impactful.</span></h2><p>Looking for creative video editing that makes your brand stand out? Let's turn your ideas into engaging visuals and bring your vision to life.</p><a class="btn" href="https://wa.me/8801581493802" target="_blank" rel="noopener">Let's Work Together →</a><div class="contact-meta"><a href="mailto:anamulhasan12@gmail.com">✉ anamulhasan12@gmail.com</a><a href="https://wa.me/8801581493802" target="_blank">☏ +880 1581-493802</a><a href="https://www.linkedin.com/in/anamulhasan228" target="_blank">in LinkedIn</a><a href="https://www.facebook.com/profile.php?id=61588774130566" target="_blank">f Facebook</a></div></div></section>
 </main>
-<footer class="wrap footer"><div>© <span id="year"></span> Anamul Hasan. All rights reserved.</div><span>Designed with intention. Edited with purpose.</span></footer>
-
-<div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-box"><div class="modal-head"><h3 id="modalTitle">Project preview</h3><button class="modal-close" id="closeModal" aria-label="Close video preview">×</button></div><div class="video-frame" id="videoFrame"><div class="video-placeholder"><strong>Project video link not added yet</strong><p>To show your real video here, add a YouTube or Vimeo embed URL to the project's data-video attribute in index.html. See README for instructions.</p></div></div></div></div>
-
+<footer><div class="wrap foot"><span>© <span id="year"></span> Anamul Hasan. All rights reserved.</span><span>Designed with creativity & purpose.</span><div class="social"><a href="#home">Back to top ↑</a></div></div></footer>
+<div class="modal" id="modal"><div class="modal-inner"><button class="close" id="closeModal" aria-label="Close video">×</button><iframe id="videoFrame" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Portfolio video"></iframe></div></div>
+<button class="customize" id="customize" title="Customize theme">⚙</button><div class="palette" id="palette"><label>Accent colour</label><div class="swatches"><button class="swatch" style="background:#ff8a24" data-color="#ff8a24"></button><button class="swatch" style="background:#e8b84b" data-color="#e8b84b"></button><button class="swatch" style="background:#55b8a6" data-color="#55b8a6"></button><button class="swatch" style="background:#9d8cff" data-color="#9d8cff"></button></div><label style="margin-top:13px">Appearance</label><button class="filter" id="themeToggle">Switch Light / Dark</button></div>
 <script>
-document.getElementById("year").textContent = new Date().getFullYear();
-
-// THEME CUSTOMIZATION: preset colors, custom HEX color, save and reset.
-const root = document.documentElement;
-const themePanel = document.getElementById("themePanel");
-const colorPicker = document.getElementById("colorPicker");
-const hexInput = document.getElementById("hexInput");
-const defaultAccent = "#ff6b35";
-let selectedAccent = defaultAccent;
-function validHex(value){ return /^#[0-9a-fA-F]{6}$/.test(value); }
-function applyAccent(color){
-  if(!validHex(color)) return;
-  selectedAccent = color;
-  root.style.setProperty("--accent", color);
-  const rgb = color.match(/[a-f\d]{2}/gi).map(x=>parseInt(x,16));
-  const lighter = rgb.map(x=>Math.min(255,Math.round(x+(255-x)*.28))).map(x=>x.toString(16).padStart(2,"0")).join("");
-  root.style.setProperty("--accent2", "#"+lighter);
-  colorPicker.value = color;
-  hexInput.value = color.toUpperCase();
-  document.querySelectorAll(".swatch").forEach(btn=>btn.classList.toggle("selected",btn.dataset.color.toLowerCase()===color.toLowerCase()));
-}
-document.getElementById("themeToggle").addEventListener("click",()=>themePanel.classList.toggle("open"));
-document.getElementById("closeTheme").addEventListener("click",()=>themePanel.classList.remove("open"));
-document.querySelectorAll(".swatch").forEach(btn=>btn.addEventListener("click",()=>applyAccent(btn.dataset.color)));
-colorPicker.addEventListener("input",e=>applyAccent(e.target.value));
-hexInput.addEventListener("input",e=>{if(validHex(e.target.value))applyAccent(e.target.value);});
-hexInput.addEventListener("change",e=>{if(!validHex(e.target.value)){e.target.value=selectedAccent.toUpperCase();}});
-document.getElementById("saveTheme").addEventListener("click",()=>{
-  localStorage.setItem("anamulPortfolioAccent",selectedAccent);
-  localStorage.setItem("anamulPortfolioLight",document.body.classList.contains("light")?"1":"0");
-  const button=document.getElementById("saveTheme");button.textContent="Saved ✓";setTimeout(()=>button.textContent="Save theme",1300);
-});
-document.getElementById("resetTheme").addEventListener("click",()=>{
-  applyAccent(defaultAccent);document.body.classList.remove("light");
-  localStorage.removeItem("anamulPortfolioAccent");localStorage.removeItem("anamulPortfolioLight");
-});
-document.getElementById("lightMode").addEventListener("click",()=>document.body.classList.toggle("light"));
-const savedAccent=localStorage.getItem("anamulPortfolioAccent");
-if(savedAccent && validHex(savedAccent))applyAccent(savedAccent);
-if(localStorage.getItem("anamulPortfolioLight")==="1")document.body.classList.add("light");
-
-// VIDEO CATEGORY FILTERS.
-const filterButtons=document.querySelectorAll(".filter-btn");
-const projectCards=document.querySelectorAll(".project");
-filterButtons.forEach(button=>button.addEventListener("click",()=>{
-  const filter=button.dataset.filter;
-  filterButtons.forEach(b=>b.classList.toggle("active",b===button));
-  projectCards.forEach(card=>card.hidden=!(filter==="all"||card.dataset.category===filter));
-}));
-
-// VIDEO MODAL. Add a YouTube/Vimeo EMBED URL to data-video to play a real project.
-const modal=document.getElementById("videoModal");
-const videoFrame=document.getElementById("videoFrame");
-document.querySelectorAll(".watch-btn").forEach(button=>button.addEventListener("click",()=>{
-  document.getElementById("modalTitle").textContent=button.dataset.title || "Project preview";
-  const url=button.dataset.video || "";
-  if(url){
-    const iframe=document.createElement("iframe");iframe.src=url;iframe.title=button.dataset.title || "Portfolio video";iframe.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";iframe.allowFullscreen=true;
-    videoFrame.replaceChildren(iframe);
-  }else{
-    videoFrame.innerHTML='<div class="video-placeholder"><strong>Project video link not added yet</strong><p>Add a YouTube or Vimeo embed URL to this project button’s data-video attribute in index.html. See README for instructions.</p></div>';
-  }
-  modal.classList.add("open");
-}));
-function closeVideo(){modal.classList.remove("open");videoFrame.innerHTML='<div class="video-placeholder"><strong>Project video link not added yet</strong><p>Add a YouTube or Vimeo embed URL to the project button in index.html.</p></div>';}
-document.getElementById("closeModal").addEventListener("click",closeVideo);
-modal.addEventListener("click",e=>{if(e.target===modal)closeVideo();});
-document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeVideo();themePanel.classList.remove("open");}});
-</script>
-</body>
-</html>
+/* ===================== EDIT YOUR PROJECTS HERE =====================
+   Add a new item by copying one object. category: talking / reels / ads / travel / before
+   YouTube videos open in a popup. Drive links open in a new tab.
+===================================================================== */
+const projects=[
+{category:"talking",title:"Talking Head Project 01",url:"https://youtu.be/JNxupUEDruk",type:"youtube"},
+{category:"talking",title:"Talking Head Project 02",url:"https://youtu.be/dhurc10g8O0",type:"youtube"},
+{category:"talking",title:"Talking Head Project 03",url:"https://youtu.be/rJGE-8biyuI",type:"youtube"},
+{category:"talking",title:"Talking Head Project 04",url:"https://youtu.be/NS9tGJzM-bU",type:"youtube"},
+{category:"talking",title:"Talking Head Project 05",url:"https://youtu.be/9FGu2o2pbxQ",type:"youtube"},
+{category:"talking",title:"Talking Head Project 06",url:"https://youtu.be/cO4Aqq7UwXA",type:"youtube"},
+{category:"reels",title:"Short Reel 01",url:"https://youtube.com/shorts/JY8TcDf-SNw",type:"youtube"},
+{category:"reels",title:"Short Reel 02",url:"https://youtube.com/shorts/SgBCCZGwwxI",type:"youtube"},
+{category:"reels",title:"Short Reel 03",url:"https://youtube.com/shorts/oB0PSNAYE_o",type:"youtube"},
+{category:"reels",title:"Short Reel 04",url:"https://youtube.com/shorts/XTbau-HRAxs",type:"youtube"},
+{category:"reels",title:"Short Reel 05",url:"https://youtube.com/shorts/tqtBdjtr20g",type:"youtube"},
+{category:"reels",title:"Short Reel 06",url:"https://youtube.com/shorts/UiGKTq4f4Vg",type:"youtube"},
+{category:"ads",title:"Promotional Ad 01",url:"https://youtube.com/shorts/7PpqObCg54U",type:"youtube"},
+{category:"ads",title:"Promotional Ad 02",url:"https://youtube.com/shorts/NEjaoHSKqNE",type:"youtube"},
+{category:"ads",title:"Promotional Ad 03",url:"https://drive.google.com/file/d/1FEzQlQTH4jU_FS3-EEWTZ2SNG7xXwrcF/view",type:"drive"},
+{category:"ads",title:"Promotional Ad 04",url:"https://drive.google.com/file/d/1yAVGjdwxq_36WaUPRiFSS51UbtiWUrcx/view",type:"drive"},
+{category:"ads",title:"Promotional Ad 05",url:"https://youtube.com/shorts/GiUuQawutj0",type:"youtube"},
+{category:"ads",title:"Promotional Ad 06",url:"https://youtube.com/shorts/66_cLi2HYMQ",type:"youtube"},
+{category:"ads",title:"Promotional Ad 07",url:"https://youtube.com/shorts/x0p8yXaOzzA",type:"youtube"},
+{category:"ads",title:"Promotional Ad 08",url:"https://youtube.com/shorts/HHPc_EY7Ics",type:"youtube"},
+{category:"ads",title:"Promotional Ad 09",url:"https://youtube.com/shorts/vUUi2jtIbiA",type:"youtube"},
+{category:"ads",title:"Promotional Ad 10",url:"https://youtube.com/shorts/kCa1u0LTgkI",type:"youtube"},
+{category:"ads",title:"Promotional Ad 11",url:"https://youtube.com/shorts/p8le9J287VA",type:"youtube"},
+{category:"travel",title:"Travel & Cinematic 01",url:"https://youtu.be/UAo5ZQVSw7U",type:"youtube"},
+{category:"travel",title:"Travel & Cinematic 02",url:"https://youtu.be/euYZ23a0w80",type:"youtube"},
+{category:"travel",title:"Travel & Cinematic 03",url:"https://youtu.be/L92fLtDAi_A",type:"youtube"},
+{category:"travel",title:"Travel & Cinematic 04",url:"https://youtu.be/j4h9Ie6sX3Q",type:"youtube"},
+{category:"before",title:"Before & After 01",url:"https://youtube.com/shorts/w97jOqcKLww",type:"youtube"},
+{category:"before",title:"Before & After 02",url:"https://youtube.com/shorts/sKXKTLaZ69E",type:"youtube"},
+{category:"before",title:"Before & After 03",url:"https://youtube.com/shorts/umj1NzA1poM",type:"youtube"}
+];
+const labels={talking:"Talking Head",reels:"Short Reels",ads:"Promotional Ads",travel:"Travel & Cinematic",before:"Before & After"};
+function videoId(url){let m=url.match(/(?:youtu\.be\/|youtube\.com\/(?:shorts\/|embed\/|watch\?v=))([A-Za-z0-9_-]{6,})/);return m?m[1]:null}
+const grid=document.getElementById('projects');
+projects.forEach((p,i)=>{const id=videoId(p.url);const thumb=id?`https://img.youtube.com/vi/${id}/hqdefault.jpg`:'';
+const card=document.createElement('article');card.className='project reveal';card.dataset.category=p.category;
+card.innerHTML=`<div class="thumb">${thumb?`<img loading="lazy" src="${thumb}" alt="${p.title} thumbnail" onerror="this.style.display='none'">`:`<div style="height:100%;display:grid;place-items:center;color:var(--accent);font-size:38px">▶</div>`}<span class="tag">${labels[p.category]}</span><span class="play">▶</span></div><div class="pinfo"><h3>${p.title}</h3><p>${p.type==="drive"?"Open Google Drive video ↗":"Watch video ↗"}</p></div>`;
+card.addEventListener('click',()=>{if(p.type==="drive"){window.open(p.url,'_blank','noopener');return;}const embed=id?`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`:p.url;document.getElementById('videoFrame').src=embed;document.getElementById('modal').classList.add('open')});grid.appendChild(card)});
+document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{if(!btn.dataset.filter)return;document.querySelectorAll('.filter[data-filter]').forEach(b=>b.classList.toggle('active',b===btn));document.querySelectorAll('.project').forEach(c=>c.hidden=btn.dataset.filter!=="all"&&c.dataset.category!==btn.dataset.filter)}));
+const modal=document.getElementById('modal');function closeVideo(){modal.classList.remove('open');document.getElementById('videoFrame').src=''}document.getElementById('closeModal').onclick=closeVideo;modal.addEventListener('click',e=>{if(e.target===modal)closeVideo()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeVideo()});
+const menu=document.getElementById('navLinks');document.getElementById('menuBtn').onclick=()=>menu.classList.toggle('open');menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const cursor=document.getElementById('cursor'),dot=document.getElementById('cursorDot');window.addEventListener('mousemove',e=>{cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px';dot.style.left=e.clientX+'px';dot.style.top=e.clientY+'px'});
+document.getElementById('customize').onclick=()=>document.getElementById('palette').classList.toggle('open');
+document.querySelectorAll('.swatch').forEach(s=>s.onclick=()=>document.documentElement.style.setProperty('--accent',s.dataset.color));
+document.getElementById('themeToggle').onclick=()=>document.body.classList.toggle('light');
+</script></body></html>

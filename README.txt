@@ -1,55 +1,34 @@
-ANAMUL HASAN — VIDEO EDITOR & MOTION DESIGNER PORTFOLIO
-Updated version: theme customization, four portfolio categories, and your contact details.
+ANAMUL HASAN — PORTFOLIO WEBSITE
+================================
 
-FILES
-- index.html: complete responsive website. CSS and JavaScript are included in this one file.
-- README.txt: setup and editing instructions.
-
-NEW FEATURES
-1. Theme settings button in the top navigation.
-2. Six preset accent colors and a custom HEX color picker.
-3. Save theme in this browser using Local Storage; reset to default.
-4. Light/dark mode toggle.
-5. Four video categories with working category filters: Short Reels, Promotional Ads, Talking Head & Long-form, Travel & Cinematic.
-6. Project preview modal for YouTube/Vimeo embeds.
-7. Responsive layout for mobile, tablet and desktop.
-
-CONTACT DETAILS ALREADY ADDED
-- Email: anamulhasan12@gmail.com
-- WhatsApp: +8801581493802 (opens a WhatsApp chat)
-- LinkedIn: https://www.linkedin.com/in/anamulhasan228
-- Facebook: https://www.facebook.com/profile.php?id=61588774130566
-- YouTube: not added yet (no link supplied)
-- Behance: not added yet (no link supplied)
-
-SAMPLE PROJECTS
-The four project cards are sample placeholders, not your actual portfolio videos. Replace project titles/descriptions and add your own links before publishing.
-
-HOW TO ADD A VIDEO
-1. Open index.html.
-2. Find the relevant project button, for example:
-   <button class="watch-btn" data-title="Social Media Reels" data-video="">...
-3. Paste a YouTube embed URL inside data-video, e.g.:
-   data-video="https://www.youtube.com/embed/VIDEO_ID"
-   For Vimeo, use its player embed URL, e.g.:
-   data-video="https://player.vimeo.com/video/VIDEO_ID"
-4. Save and upload the updated index.html to GitHub.
-
-HOW TO ADD MORE PROJECTS
-Copy one complete <article class="project" ...> card inside the #projectGrid container.
-Set data-category to one of: reels, ads, talking, travel. Update the title, description, category tag and data-video URL.
-
-GITHUB PAGES — FREE HOSTING
-1. Open your GitHub repository.
-2. Upload/replace index.html in the repository root.
-3. Commit the changes.
-4. Go to Settings > Pages.
-5. Select Deploy from a branch, branch main, folder /(root), then Save.
+UPLOAD TO GITHUB PAGES
+1. Extract this ZIP file.
+2. Open your GitHub repository: anamul-hasan-portfolio.
+3. Upload index.html and the assets folder to the repository root (not inside another folder).
+4. Commit the changes.
+5. Open Settings → Pages and confirm Deploy from a branch, main, /(root).
 6. Wait for GitHub Pages to publish.
 
+EDIT PROJECTS LATER
+Open index.html in VS Code or any text editor. Search for:
+"EDIT YOUR PROJECTS HERE"
+Copy an object in the projects array and change:
+- category: talking / reels / ads / travel / before
+- title: the project title shown on the card
+- url: YouTube or Google Drive share link
+- type: youtube or drive
+
+For Google Drive videos, set sharing to "Anyone with the link" (Viewer).
+YouTube videos use YouTube thumbnails automatically. The website opens videos in a popup.
+To add a YouTube project, use its normal watch or youtu.be URL. Keep video files hosted on YouTube/Drive; do not upload large video files into GitHub.
+
+EDIT PROFILE / CONTACT
+- Replace assets/anamul-hasan.png with your updated photo (keep the same filename).
+- Search in index.html for email, WhatsApp, LinkedIn and Facebook links to update them.
+- The YouTube and Behance profile links were not provided, so they are not shown as social profile links yet.
+
 NOTES
-- This is a static website and works with GitHub Pages. No paid hosting or backend is required.
-- Theme choice is saved only in each visitor's own browser.
-- Editing or adding projects requires changing index.html and uploading it to GitHub.
-- A login-based admin dashboard for uploading videos directly is not included.
-- Use YouTube/Vimeo embeds rather than uploading large video files to the GitHub repository.
+- This is a static HTML/CSS/JavaScript website suitable for GitHub Pages. No paid hosting or backend is required.
+- Theme controls: the gear button at bottom-right changes accent colour and switches light/dark appearance.
+- Responsive layout, mobile navigation, category filters, video popup, scroll reveal and reduced-motion accessibility are included.
+- Your supplied Before & After links are single videos, so they are displayed as video cards. A true draggable before/after image slider would require separate before and after image assets.
