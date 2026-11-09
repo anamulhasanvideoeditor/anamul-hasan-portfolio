@@ -23,7 +23,7 @@ YouTube videos use YouTube thumbnails automatically. The website opens videos in
 To add a YouTube project, use its normal watch or youtu.be URL. Keep video files hosted on YouTube/Drive; do not upload large video files into GitHub.
 
 EDIT PROFILE / CONTACT
-- Replace assets/anamul-hasan.png with your updated photo (keep the same filename).
+- Your profile photo is included at assets/anamul-hasan.png. Replace it with a new photo later using the same filename.
 - Search in index.html for email, WhatsApp, LinkedIn and Facebook links to update them.
 - The YouTube and Behance profile links were not provided, so they are not shown as social profile links yet.
 
